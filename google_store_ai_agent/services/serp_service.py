@@ -2,6 +2,8 @@ from services.base_http_client import BaseHTTPClient
 import os 
 from dotenv import load_dotenv 
 
+load_dotenv()
+
 class SerpService:
     def __init__(self):
         self.client = BaseHTTPClient(baseURL=os.environ["SERP_BASE_URL"])
@@ -17,9 +19,15 @@ class SerpService:
         try:
             dataJSON = self.client.getCall(endpoint = "search", data = queryDict)
             result = []
-            if "organic_results" in dataJSON:
-                if "items" in dataJSON["organic_results"]:
-                    for data in dataJSON["organic_results"]["items"]:
+            for k, v in dataJSON.items():
+                print("KEY", k)
+            print("organic_results" in dataJSON, "items" in dataJSON["organic_results"])
+            #print("DATAJSON", dataJSON)
+            if "organic_results" in dataJSON and len(dataJSON["organic_results"]) > 0:
+               
+                if "items" in dataJSON["organic_results"][0]:
+                    print("ITEMS", dataJSON["organic_results"][0]["items"][0])
+                    for data in dataJSON["organic_results"][0]["items"]:
                         resultDict = {}
                         for k, v in data.items():
                             if not (k == "description"):
