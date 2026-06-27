@@ -8,10 +8,10 @@ load_dotenv()
 agent = Agent(
     system_prompt = SYSTEM_PROMPT,
     tools = [getPlayStoreAppDescription, getPlayStoreApps],
-    model = "openai-chat:gpt5.1"
+    model = "openai-chat:gpt-5.2"
 )
 
 async def getPlayStoreAppRecomendations(query : str):
-    async with agent.run_sync(query) as result:
+    async with agent.run_stream(query) as result:
         async for token in result.stream_text(delta = True):
             print(token, end="")
