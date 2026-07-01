@@ -6,6 +6,7 @@ def getPlayStoreApps(query : str):
     print(f"Calling getPlayStoreApps toll {query}")
     return serpService.getPlayStoreApps(query=query)
 
-def getPlayStoreAppDescription(productId : str):
+def getProductDescriptionForPlayStoreApp(productId : str):
     print(f"Calling getPlayStoreAppDescription {productId}")
-    return serpService.getProductDescription(productId=productId)
+    return serpService.getProductDescriptionForPlayStoreApp(productId=productId)
+

@@ -1,4 +1,4 @@
-from tools.serp_tool import getPlayStoreAppDescription, getPlayStoreApps
+from tools.serp_tool import getProductDescriptionForPlayStoreApp, getPlayStoreApps
 from prompts.google_store_prompts import SYSTEM_PROMPT
 from pydantic_ai import Agent 
 from dotenv import load_dotenv
@@ -7,7 +7,7 @@ load_dotenv()
 
 agent = Agent(
     system_prompt = SYSTEM_PROMPT,
-    tools = [getPlayStoreAppDescription, getPlayStoreApps],
+    tools = [getProductDescriptionForPlayStoreApp, getPlayStoreApps],
     model = "openai-chat:gpt-5.2"
 )
 
