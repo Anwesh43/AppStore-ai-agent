@@ -70,15 +70,6 @@ Get curated recommendations with detailed app information, ratings, and one-clic
 
 ![Productivity Apps Demo](./screenshots/top_productivity_ios.png)
 
-### Gaming Apps with Price Sorting
-Browse gaming apps with free/paid sorting, developer info, and age ratings.
-
-![Gaming Apps with Sorting](./screenshots/top-ios-gaming-apps.png)
-
-### Free Gaming Apps Recommendations
-Discover the best free gaming apps with comprehensive descriptions and Game Center support indicators.
-
-![Free Gaming Apps](./screenshots/top-free-ios-gaming-apps.png)
 
 ## 📁 Project Structure
 
