@@ -56,14 +56,14 @@ class SerpService:
         result = []
         queryDict = {
             "engine": "apple_app_store",
-            "q": query,
+            "term": query,
+            "api_key": os.environ["SERP_API_KEY"] 
         }
         response = self.client.getCall("search", queryDict)
         keysMap = {
             "description": True, 
             "screenshots": True,
             "supported_devices": True, 
-            "logos": True,  
         }
         if "organic_results" in response:
             organicResults = response["organic_results"]
@@ -73,7 +73,7 @@ class SerpService:
                     if k not in keysMap:
                         respDict[k] = v
                     elif k == "description":
-                        self.appleProductIdDescriptionMap[str(k["description"])] = v 
+                        self.appleProductIdDescriptionMap[str(data["id"])] = data["description"] 
             result.append(respDict)
         return result 
     

@@ -15,5 +15,14 @@ def getAppleStoreApps(query : str):
     return serpService.getAppleStoreApps(query=query)
 
 def getProductStoreDescriptionForAppleStoreApp(productId : str):
-    print(f"Calling getProductStoreDescriptionForAppleStoreApp tool {product_id}")
+    print(f"Calling getProductStoreDescriptionForAppleStoreApp tool {productId}")
     return serpService.getProductStoreDescriptionForAppleStoreApp(productId=productId)
+
+def createHTML(fileName : str, htmlStr : str):
+    print(f"Calling createHTML tool {fileName}")
+    with open(fileName, "w") as f:
+        f.write(htmlStr)
+        return {
+            "status": "success",
+            "message": f"Written to html file {fileName}"
+        }

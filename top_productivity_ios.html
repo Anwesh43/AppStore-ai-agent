@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Top Productivity Apps for iOS</title>
+<style>
+  :root{
+    --bg:#0b1020;
+    --card:#121a33;
+    --card2:#0f1730;
+    --text:#eaf0ff;
+    --muted:#a9b4d6;
+    --line:rgba(255,255,255,.10);
+    --accent:#7c5cff;
+    --accent2:#2ee59d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(124,92,255,.35), transparent 50%),
+                radial-gradient(900px 500px at 90% 20%, rgba(46,229,157,.22), transparent 55%),
+                var(--bg);
+    color:var(--text);
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 40px}
+  header{
+    display:flex;gap:14px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;
+    margin-bottom:18px;
+  }
+  h1{font-size:26px;line-height:1.15;margin:0}
+  .sub{color:var(--muted);font-size:13px;margin-top:6px}
+  .pill{
+    border:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    padding:10px 12px;border-radius:999px;
+    font-size:12px;color:var(--muted)
+  }
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:14px}
+  .card{
+    grid-column:span 6;
+    background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+    position:relative;
+  }
+  .card::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(600px 120px at 30% 0%, rgba(124,92,255,.18), transparent 60%);
+    pointer-events:none;
+  }
+  .inner{padding:14px 14px 12px;position:relative}
+  .top{display:flex;gap:12px;align-items:center}
+  .logo{
+    width:54px;height:54px;border-radius:14px;flex:0 0 auto;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(0,0,0,.18);
+    object-fit:cover;
+  }
+  .title{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .name{font-size:16px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:12px}
+  .badge{font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .rating{color:#ffd36e;border-color:rgba(255,211,110,.25);background:rgba(255,211,110,.06)}
+  .desc{margin:10px 0 12px;color:#d6defa;font-size:13px;line-height:1.45}
+  .actions{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  a.btn{
+    text-decoration:none;color:var(--text);
+    background:linear-gradient(180deg, rgba(124,92,255,.95), rgba(124,92,255,.70));
+    padding:10px 12px;border-radius:12px;
+    font-weight:650;font-size:12px;
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 10px 22px rgba(0,0,0,.25);
+  }
+  a.btn.secondary{
+    background:linear-gradient(180deg, rgba(46,229,157,.22), rgba(46,229,157,.10));
+    color:var(--text);
+  }
+  .muted{color:var(--muted);font-size:12px}
+  footer{margin-top:18px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+  @media (max-width:860px){.card{grid-column:span 12}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Top Productivity Apps for iOS</h1>
+        <div class="sub">Hand-picked from App Store search results + official store descriptions (where available).</div>
+      </div>
+      <div class="pill">Tip: mix a <b>task app</b> + a <b>notes app</b> + a <b>focus tool</b> for best results.</div>
+    </header>
+
+    <div class="grid">
+      <!-- Google Sheets -->
+      <section class="card">
+        <div class="inner">
+          <div class="top">
+            <img class="logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/2f/dc/df2fdc2a-01e4-7320-678e-a0fd89e87d32/sheets_2026_ios-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg" alt="Google Sheets" />
+            <div class="title">
+              <p class="name">Google Sheets</p>
+              <div class="meta">
+                <span class="badge rating">★ 4.81</span>
+                <span class="badge">Free</span>
+                <span class="badge">Offline</span>
+                <span class="badge">Collaboration</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">Create, edit, and collaborate on spreadsheets with real-time sharing, charts, formulas, and offline access. Great for budgets, trackers, and lightweight project planning.</p>
+          <div class="actions">
+            <a class="btn" href="https://apps.apple.com/us/app/google-sheets/id842849113?uo=4" target="_blank" rel="noreferrer">View on App Store</a>
+            <span class="muted">Developer: Google • iOS 17.0+</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Noteshelf 3 -->
+      <section class="card">
+        <div class="inner">
+          <div class="top">
+            <img class="logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/57/2f/8f572f27-fca5-2403-71a2-fa8ac170e606/AppIcon-Prod-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg" alt="Noteshelf 3" />
+            <div class="title">
+              <p class="name">Noteshelf 3: AI Digital Notes</p>
+              <div class="meta">
+                <span class="badge rating">★ 4.6</span>
+                <span class="badge">Free</span>
+                <span class="badge">Handwriting</span>
+                <span class="badge">PDF annotate</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">A powerful handwriting + PDF markup app with audio recording and AI tools (summaries, translation, explanations). Excellent for iPad note-taking and study workflows.</p>
+          <div class="actions">
+            <a class="btn" href="https://apps.apple.com/us/app/noteshelf-3-ai-digital-notes/id6458735203?uo=4" target="_blank" rel="noreferrer">View on App Store</a>
+            <span class="muted">Developer: Fluid Touch • iOS 17.0+</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- UpNote -->
+      <section class="card">
+        <div class="inner">
+          <div class="top">
+            <img class="logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/68/da/c868da83-990d-1d52-0ee9-8a8588d04bc9/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="UpNote" />
+            <div class="title">
+              <p class="name">UpNote - notes, diary, journal</p>
+              <div class="meta">
+                <span class="badge rating">★ 4.7</span>
+                <span class="badge">Free</span>
+                <span class="badge">Lock/Face ID</span>
+                <span class="badge">Markdown</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">Clean, fast notes with strong organization (notebooks, pin, bookmarks, linking) and privacy lock. A great alternative to heavier note systems.</p>
+          <div class="actions">
+            <a class="btn" href="https://apps.apple.com/us/app/upnote-notes-diary-journal/id1389634515?uo=4" target="_blank" rel="noreferrer">View on App Store</a>
+            <span class="muted">Developer: UpNote Company • iOS 15.6+</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Do.List -->
+      <section class="card">
+        <div class="inner">
+          <div class="top">
+            <img class="logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/cb/3a/29cb3a5b-e910-df74-03e5-c07716b16341/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="Do.List" />
+            <div class="title">
+              <p class="name">Do.List: To Do List Organizer</p>
+              <div class="meta">
+                <span class="badge rating">★ 4.68</span>
+                <span class="badge">Free</span>
+                <span class="badge">Minimal</span>
+                <span class="badge">Today/Tomorrow/Later</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">Simple task management built around three priority buckets (Today, Tomorrow, Later) plus “Life Lists” like groceries, shopping, and repeating routines.</p>
+          <div class="actions">
+            <a class="btn" href="https://apps.apple.com/us/app/do-list-to-do-list-organizer/id1036135343?uo=4" target="_blank" rel="noreferrer">View on App Store</a>
+            <span class="muted">Developer: DG Apps • iOS 16.6+</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Perfect Day -->
+      <section class="card">
+        <div class="inner">
+          <div class="top">
+            <img class="logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/c2/17/7dc217ff-bec4-47f4-813a-f9df53f8ef66/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg" alt="Perfect Day" />
+            <div class="title">
+              <p class="name">Perfect Day: Organize Your Day</p>
+              <div class="meta">
+                <span class="badge rating">★ 4.53</span>
+                <span class="badge">Free</span>
+                <span class="badge">Habits</span>
+                <span class="badge">Reminders</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">A to-do + habit builder with self-care routines, customizable reminders, and tools to visualize a balanced day. Best if you want structure + wellbeing.</p>
+          <div class="actions">
+            <a class="btn" href="https://apps.apple.com/us/app/perfect-day-organize-your-day/id6476302082?uo=4" target="_blank" rel="noreferrer">View on App Store</a>
+            <span class="muted">Developer: Asana Rebel • iOS 18.6+</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Firefox -->
+      <section class="card">
+        <div class="inner">
+          <div class="top">
+            <img class="logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/e1/76/77e176fe-c1fd-fc85-b642-a2fc785c9a02/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg" alt="Firefox" />
+            <div class="title">
+              <p class="name">Firefox Fast & Private Browser</p>
+              <div class="meta">
+                <span class="badge rating">★ 4.65</span>
+                <span class="badge">Free</span>
+                <span class="badge">Reader Mode</span>
+                <span class="badge">Password manager</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">A productivity-friendly browser with tracking protection, Reader Mode for distraction-free articles, and device sync—great for focused research and reading.</p>
+          <div class="actions">
+            <a class="btn secondary" href="https://apps.apple.com/us/app/firefox-fast-private-browser/id989804926?uo=4" target="_blank" rel="noreferrer">View on App Store</a>
+            <span class="muted">Developer: Mozilla • iOS 15.0+</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <div><b>Quick picks:</b> Notes & handwriting: <b>Noteshelf 3</b>. Lightweight notes: <b>UpNote</b>. Simple tasks: <b>Do.List</b>. Habit + routine: <b>Perfect Day</b>. Spreadsheets: <b>Google Sheets</b>.</div>
+    </footer>
+  </div>
+</body>
+</html>
