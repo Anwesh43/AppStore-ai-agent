@@ -78,7 +78,7 @@ class SerpService:
         return result 
     
 
-    def getAppleStoreDescription(self, productId : str):
+    def getProductStoreDescriptionForAppleStoreApp(self, productId : str):
         if not(productId in self.appleProductIdDescriptionMap):
             return {
                 "status": "not found in productIdMap",
